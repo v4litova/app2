@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        android:text="Название книги:"/>
+
+    <TextView
+        android:id="@+id/textViewBookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Автор: "
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewBookDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBookAuthor"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="62dp"
+        android:text="Описание книги: "
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="195dp"
+        android:layout_height="212dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/book1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="409dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="0dp"
+        android:textSize="@dimen/text_size_large"
+        android:text="Война и мир" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="153dp"
+        android:text="Л. Н. Толстой"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="-1dp"
+        android:text="Это эпический роман Льва Толстого,
+        который охватывает период событий во время войн
+        Наполеона с Россией. В нем изображены судьбы ряда
+        аристократических семей, их любовные истории, а
+        также влияние исторических событий на жизнь
+        обычных людей в тот период."
+        android:textSize="@dimen/text_size_normal" />
+
+</RelativeLayout>
